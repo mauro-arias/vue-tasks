@@ -12,6 +12,9 @@
               <v-textarea @keyup.enter='addTask' v-model='description' auto-grow rows='1' label='¿Qué tienes que realizar?'></v-textarea >
               <v-btn type="submit" block color='cyan' dark small>Agregar tarea<v-icon right>mdi-send</v-icon></v-btn>
             </v-form>
+            <div class='mt-3 d-flex align-center'>
+              <v-icon small>mdi-information</v-icon><p class='mb-0 ml-2 text-caption'>Ningún dato es guardado, siéntete libre de probar la aplicación.</p>
+            </div>
           </v-card>
         </v-flex>
 
