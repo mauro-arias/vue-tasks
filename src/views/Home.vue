@@ -35,6 +35,9 @@
 
         <v-flex xs12 sm6>
           <h1 class='display-1 text-center'>Lista de tareas</h1>
+
+          <v-card-text v-if='taskList.length === 0' class='d-flex justify-center mt-3'><p class='mb-0 font-weight-medium'>No hay ninguna tarea aún...</p></v-card-text>
+
           <v-card class='my-3' elevation="4" v-for='(task, index) in taskList' :key='index'>
             <v-card-title><v-chip color='cyan' label text-color="white"><v-icon left>mdi-label</v-icon>Tarea N° {{ task.id }}</v-chip></v-card-title>
             <v-card-text><p class='mb-0'>{{ task.description }}</p></v-card-text>
