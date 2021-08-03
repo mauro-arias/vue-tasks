@@ -84,7 +84,7 @@
     },
     methods: {
       addTask(){
-        if (this.description == ''){
+        if (this.description.trim() === ''){
           this.text = 'La tarea está vacía!'
           this.snackbar = true;
           this.description = '';
